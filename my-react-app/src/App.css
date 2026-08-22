@@ -1,3 +1,62 @@
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.site-brand,
+.site-header a,
+.site-footer a {
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.site-brand {
+  font-weight: 700;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header nav a:hover,
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+.app-content {
+  display: grid;
+  flex: 1;
+  min-height: 240px;
+  place-items: center;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  border-bottom: 0;
+  color: var(--text);
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .site-header,
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px 20px;
+  }
+
+  .site-header nav {
+    gap: 16px;
+  }
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
